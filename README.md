@@ -99,6 +99,10 @@ Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 
 ---
 
+## UI Screenshots
+![hommescreen](https://github.com/Ekansh3503/TodoList-Mern/blob/main/UI%20ss/Screenshot%202024-11-20%20132014.png?raw=true)
+https://github.com/user-attachments/assets/0713d361-b6a8-4abb-873b-fb3b9ebe34f6
+
 ## **License**
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
