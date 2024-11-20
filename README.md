@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Todo List Application
 
-## Available Scripts
+A full-stack Todo List application built with **React** for the frontend and **Express.js** with **MongoDB** for the backend. This application allows users to perform CRUD operations (Create, Read, Update, Delete) on their tasks.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## **Features**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Create a new task.
+- View a list of tasks.
+- Update existing tasks.
+- Delete tasks from the list.
+- Connects to a MongoDB database for persistent data storage.
+- Implements RESTful API endpoints for backend operations.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## **Tech Stack**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Frontend**
+- **React.js**: A JavaScript library for building user interfaces.
+- **Axios**: For handling HTTP requests.
 
-### `npm run build`
+### **Backend**
+- **Node.js**: JavaScript runtime environment.
+- **Express.js**: Web application framework for Node.js.
+- **MongoDB**: NoSQL database for data storage.
+- **Mongoose**: ODM for MongoDB.
+- **dotenv**: For environment variable management.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Installation**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
 
-### `npm run eject`
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/Ekansh3503/TodoList-Mern.git
+cd TodoList-Mern
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **2. Install Dependencies**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **3. Set Up Environment Variables**
+Create a `.env` file in the `backend` directory with the following keys:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Replace `your_mongodb_connection_string` with your MongoDB connection string.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## **Usage**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **1. Start MongoDB**
+Make sure your MongoDB instance is running. For a local database, use:
+```bash
+mongod
+```
 
-### Code Splitting
+### **2. Run the Backend**
+From the `backend` directory:
+```bash
+npm start
+```
+The backend server will start on [http://localhost:5000](http://localhost:5000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **3. Run the Frontend**
+From the `src` directory:
+```bash
+npm start
+```
+The frontend development server will start on [http://localhost:3000](http://localhost:3000).
 
-### Analyzing the Bundle Size
+### **4. Access the Application**
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## **API Endpoints**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Method | Endpoint        | Description                  |
+|--------|-----------------|------------------------------|
+| GET    | `/api/items`    | Fetch all tasks             |
+| POST   | `/api/items`    | Create a new task           |
+| PUT    | `/api/items/:id`| Update an existing task     |
+| DELETE | `/api/items/:id`| Delete a task by ID         |
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## **License**
 
-### Deployment
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
