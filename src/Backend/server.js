@@ -74,7 +74,7 @@ app.put("/api/items/:id", async (req, res) => {
 
 
 // Route to delete an item by ID
-app.delete("/api/items/:id", async (req, res) => { // Changed to DELETE method
+app.delete("/api/items/:id", async (req, res) => { 
   const { id } = req.params;
 
   try {
